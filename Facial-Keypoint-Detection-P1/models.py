@@ -21,7 +21,7 @@ class Net(nn.Module):
         # As an example, you've been given a convolutional layer, which you may (but don't have to) change:
         # 1 input image channel (grayscale), 32 output channels/feature maps, 5x5 square convolution kernel
         # Architecture - (CONV-RELU-POOL) - (CONV-RELU-POOL) - (CONV-RELU-POOL) - (CONV-RELU-POOL) - (FLATTEN) - (DROPOUT - FC) - (DROPOUT - FC) - (DROPOUT - FC)
-        # Width:  224     220       110      106        53       49        24       20        10      256 x 10 x 10         512              256              136
+        # Width:  224     220       110      106        53       49        24       20        10      256 x 10 x 10         1024            1024              136
         # Channels:        32                 64                128                 256
 
         ## Note that among the layers to add, consider including:
