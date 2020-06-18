@@ -24,3 +24,7 @@ There are notebook cells that run commands to download the dataset and the depen
 Please note that the 2014 training, validation and testing images and annotations are roughly 40 GB of space in total, so please make sure you have this much space prior to downloading the dataset.  However, the cells incrementally download each portion of the dataset one zip file at a time by extracting the contents then deleting the zip file.  Therefore, you should run the `Image-Captioning-Project-P2/1_Preliminaries.ipynb` and `Image-Captioning-Project-P2/2_Training.ipynb` notebooks.
 
 Should you not wish to train the model, the CNN encoder and RNN decoder models are stored in the `Image-Captioning-Project-P2/models` directory.  The `3_inference.ipynb` notebook file shows examples of how to run the captioning algorithm given an input image.
+
+## Project #3 - Implement Graph SLAM
+
+The goal of this project is to implement Graph Simultaneous Localisation and Mapping (SLAM) in a 2D world given robot motion and sensor measurements to landmarks.  The relevant notebooks can be found in `Implement-SLAM-P3/`.  However, notebooks `1. Robot Moving and Sensing.ipynb` and `3. Landmark Detection and Tracking.ipynb` provide an exposition of the Robot class used for the problem and for implementing SLAM respectively using this Robot class.
