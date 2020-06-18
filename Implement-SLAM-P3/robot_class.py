@@ -90,15 +90,15 @@ class robot:
             ##    - The noise component should be a random value between [-1.0, 1.0)*measurement_noise
             ##    - Feel free to use the function self.rand() to help calculate this noise component
             ##    - It may help to reference the `move` function for noise calculation
-            dx += self.rand() * self.motion_noise
-            dy += self.rand() * self.motion_noise
+            dx += self.rand() * self.measurement_noise
+            dy += self.rand() * self.measurement_noise
             ## 3. If either of the distances, dx or dy, fall outside of the internal var, measurement_range
             ##    then we cannot record them; if they do fall in the range, then add them to the measurements list
             ##    as list.append([index, dx, dy]), this format is important for data creation done later
-            if dx > self.measurement_range or dy > self.measurement_range:
-                continue
-            
-            measurements.append((i, dx, dy))
+            ## If the measurement range is set to -1, this signals that we should allow all landmarks to be visible
+            if (abs(dx) <= self.measurement_range and abs(dy) <= self.measurement_range) or self.measurement_range == -1:
+                measurements.append((i, dx, dy))
+
         
         ## TODO: return the final, complete list of measurements
         return measurements
