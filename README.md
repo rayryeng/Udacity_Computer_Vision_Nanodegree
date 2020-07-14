@@ -1,4 +1,5 @@
-# Udacity_Computer_Vision_Nanodegree
+# Udacity Computer Vision Engineer Nanodegree Course
+
 
 This repo contains my work for the Udacity Computer Vision Nanodegree Program.  Each directory contains a project required for completion and also contains instructions on what is expected to complete each project successfully.  Also note that the code uses PyTorch 1.x and not 0.x so some slight changes were made to ensure the code runs.
 
